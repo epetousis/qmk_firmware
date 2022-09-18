@@ -16,6 +16,7 @@
 #include QMK_KEYBOARD_H
 
 #define LT3_TAB LT(3, KC_TAB)
+#define MTCTRL_TAB MT(MOD_LCTL, KC_TAB)
 
 enum custom_keycodes {
   MACOS_SS = SAFE_RANGE,
@@ -49,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 LAYOUT(
   KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
-  LT3_TAB, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_SFTENT,
+  MTCTRL_TAB, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_SFTENT,
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_QUOT,
   KC_LCTL, KC_LALT, KC_LGUI, KC_APP,  MO(2),      KC_SPC,        MO(1),  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
 ),
@@ -103,7 +104,7 @@ LAYOUT( /* Left */
    * |     |     |     |     |      |          |       |MousL|MousD|MousU|MousR|
    * `-------------------------------------------------------------------------'
    */
-
+// Currently disabled in favour of LCTRL modtap
 LAYOUT( /* Tab */
   KC_ESC,  KC_CALC, KC_WHOM, KC_MAIL, KC_MYCM, _______, _______, _______, _______, MACOS_SS, KC_PSCR, _______,
   _______, KC_GRV, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
