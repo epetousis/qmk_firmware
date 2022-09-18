@@ -78,7 +78,7 @@ LAYOUT( /* Right */
    * ,-------------------------------------------------------------------------.
    * |   ~  |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  (  |  )  |Delete|
    * |-------------------------------------------------------------------------+
-   * |      |     |     |     |     |     |     |  _  |  +  |  { |  }  |       |
+   * |  <<  |PlPau| >>  |VolDn|VolUp|VolMt|     |  _  |  +  |  { |  }  |       |
    * |-------------------------------------------------------------------------+
    * |       | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10 |  |  |
    * |-------------------------------------------------------------------------+
@@ -88,7 +88,7 @@ LAYOUT( /* Right */
 
 LAYOUT( /* Left */
   KC_TILDE,  KC_EXCLAIM,  KC_AT,  KC_HASH,  KC_DOLLAR, KC_PERCENT, KC_CIRCUMFLEX, KC_AMPERSAND, KC_ASTERISK, KC_LEFT_PAREN, KC_RIGHT_PAREN, KC_DELETE,
-  _______, _______, _______, _______, _______, _______, _______, KC_UNDERSCORE, KC_PLUS, KC_LEFT_CURLY_BRACE, KC_RIGHT_CURLY_BRACE, _______,
+  KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_NEXT_TRACK, KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP, KC_AUDIO_MUTE, _______, KC_UNDERSCORE, KC_PLUS, KC_LEFT_CURLY_BRACE, KC_RIGHT_CURLY_BRACE, _______,
   _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_PIPE,
   _______, _______, _______, KC_CAPS, _______,     _______,      _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END
 ),
